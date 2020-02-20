@@ -14,7 +14,7 @@ select dbname from equityresearch.dbo.universe
 where universeid in (1292)    --------used to find dbname
 
  
-
+ ActRtn12M|ActRtn12M|12-Month Active Return with 1-month Lag|
 select top 5 * from vradata02.[dbo].[ModelFactorRank]   ---db name should be the one from the above query 
 
 --- Universe
@@ -25,7 +25,7 @@ select top 5 * from backend.vra.dbo.universesecurity
 select top 100 * 
 from EquityResearch.[dbo].[Factors]
 where 1=1
-and FactorName like '%gross profit%'
+and FactorName like '%fama%'
 --and FactorId in ('481')
 
 
